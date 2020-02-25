@@ -1,0 +1,27 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+
+//helpers
+@import './helpers/fonts.scss';
+@import './helpers/variables.scss';
+@import './helpers/mixins.scss';
+@import 'base.scss';
+
+//sections
+@import './section/header.scss';
+@import './section/whyit.scss';
+@import './section/choose.scss';
+@import './section/offers.scss';
+@import './section/developing.scss';
+@import './section/maraphone.scss';
+@import './section/structure.scss';
+@import './section/project.scss';
+@import './section/mentor.scss';
+@import './section/community.scss';
+@import './section/result.scss';
+@import './section/future.scss';
+@import './section/firststep.scss';
+@import './section/awards.scss';
