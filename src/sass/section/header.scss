@@ -66,6 +66,7 @@
   }
 
   &__start {
+    font-family: $font-acrom;
     @include font-settings (30px, 32px, 400);
     color: #fdc33f;
     text-align: center;
@@ -73,12 +74,14 @@
   }
 
   &__project {
-    @include font-settings (16px, 21px, 400);
+    font-family: $font-acrom;
+    @include font-settings (16px, 21px, 600);
     color: $white-color;
     text-align: center;
     padding-left: 42px;
     padding-right: 42px;
     margin-bottom: 32px;
+    text-transform: uppercase;
 
     &_arrow::before {
       content: '//';
@@ -134,7 +137,7 @@
     }
 
     &__project {
-      @include font-settings (18px, 32px, 400);
+      @include font-settings (18px, 32px, 600);
       margin-bottom: 26px;
 
       &_arrow::before {

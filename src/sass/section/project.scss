@@ -1,6 +1,6 @@
 .text-subtitle {
   @include font-settings(18px, 26px, 800);
-  font-family: "Acrom", sans-serif;
+  font-family: 'Acrom', sans-serif;
   color: $main-orange;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -8,7 +8,7 @@
 
 .introduction {
   @include font-settings(16px, 24px, 400);
-  font-family: "Acrom", sans-serif;
+  font-family: 'Acrom', sans-serif;
   color: $dark-text;
   margin-bottom: 38px;
 }
@@ -20,13 +20,15 @@
 
 .oportunity-text {
   @include font-settings(14px, 21px, 400);
-  font-family: "Acrom", sans-serif;
+  font-family: 'Acrom', sans-serif;
   color: $text-grey;
   margin-bottom: 15px;
   clear: left;
 }
 
 .oportunity-img {
+  border: 29px solid $bg-violet;
+
   &__dec {
     border-left: $white-color solid 29px;
     border-top: $white-color solid 29px;
@@ -57,12 +59,11 @@
     counter-increment: my-counter;
     margin-bottom: 40px;
 
-
     &::before {
-      content: "#"counter(my-counter, decimal-leading-zero);
+      content: '#' counter(my-counter, decimal-leading-zero);
       @include font-settings(23px, 24px, 800);
       float: left;
-      font-family: "Acrom", sans-serif;
+      font-family: 'Acrom', sans-serif;
       color: $main-orange;
       margin-right: 8px;
       align-items: baseline;
@@ -95,9 +96,8 @@
     }
 
     &_career {
-      width: 188px
+      width: 188px;
     }
-
   }
 }
 
@@ -105,13 +105,13 @@
   padding-bottom: 65px;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .text-subtitle {
     font-size: 23px;
     text-align: center;
   }
 
-  .project{
+  .project {
     position: relative;
 
     &::before {
@@ -119,7 +119,7 @@
       width: 30px;
       height: 35px;
       position: absolute;
-      bottom: 35px;
+      bottom: 48px;
       right: 20%;
       transform: rotate(5deg);
       border-top: 18px solid transparent;
@@ -132,7 +132,6 @@
     text-align: center;
     width: 640px;
     margin: 0 auto;
-
   }
 
   .sub-introduction {
@@ -157,7 +156,7 @@
       }
 
       &::after {
-        content: "";
+        content: '';
         width: 43px;
         height: 3px;
         display: block;
@@ -173,6 +172,11 @@
     margin: 0 auto;
     border: $bg-violet solid 29px;
     width: 475px;
+    box-shadow: 1px 1.732px 6px 0px $dark-text;
+
+    &__dec {
+      border: 29px solid $white-color;
+    }
   }
 
   .project {
@@ -182,10 +186,9 @@
   .skills-wrapper {
     padding-left: 40px;
   }
-
 }
 
-@media(min-width: 992px) {
+@media (min-width: 1200px) {
   .project {
     padding-top: 75px;
     padding-bottom: 95px;
@@ -208,7 +211,7 @@
     &__item {
       width: 400px;
 
-      :nth-child(-n+2) {
+      :nth-child(-n + 2) {
         margin-bottom: 20px;
       }
 
@@ -225,10 +228,9 @@
       left: 5px;
     }
   }
-
 }
 
-@media(min-width: 768px) and (max-width:1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .oportunity-text {
     margin-bottom: 20px;
     padding-left: 75px;

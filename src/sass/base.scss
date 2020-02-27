@@ -77,7 +77,7 @@ a {
   border-radius: 30px;
   border: none;
   color: $white-color;
-  @include font-settings(12px, 60px, 800);
+  @include font-settings(12px, 50px, 800);
   font-family: $font-acrom;
   text-transform: uppercase;
   letter-spacing: 1.2px;

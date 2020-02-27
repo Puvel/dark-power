@@ -91,9 +91,14 @@
   &__text-title {
     @include font-settings(24px, 60px, 800);
     margin-bottom: 4px;
+    text-transform: uppercase;
 
     @media (min-width: 768px) {
       text-align: left;
+    }
+
+    @media (min-width: 768px)and (max-width:1199px) {
+      padding-left: 42px;
     }
   }
 

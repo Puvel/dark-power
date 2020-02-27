@@ -48,15 +48,21 @@
     margin-bottom: 50px;
     padding: 42px 20px;
     background-color: $bg-yellow;
+
+    @media (min-width:768px) {
+      padding: 42px 50px
+    }
   }
 
   &_list:last-child {
     margin-bottom: 50px;
     color: $white-color;
     padding: 42px 20px;
-    // margin-left: -20px;
-    // margin-right: -20px;
     background-color: $bg-violet;
+
+    @media (min-width:768px) {
+      padding: 42px 50px
+    }
   }
 
 }
@@ -240,11 +246,11 @@
   }
 
   .future__description_list:first-child::before {
-    bottom: 67px;
+    bottom: 58px;
   }
 
   .future__description_list:last-child::before {
-    bottom: 67px;
+    bottom: 58px;
   }
 
 }

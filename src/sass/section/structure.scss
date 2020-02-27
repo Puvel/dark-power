@@ -5,17 +5,11 @@
   letter-spacing: -0.5px;
 
   &::before {
-    content: "[";
-    @include font-settings(30px, 40px, 800);
-    font-family: "Acrom", sans-serif;
     color: $main-orange;
     position: relative;
   }
 
   &::after {
-    content: "]";
-    @include font-settings(30px, 40px, 800);
-    font-family: "Acrom", sans-serif;
     color: $main-orange;
   }
 }

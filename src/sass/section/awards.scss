@@ -207,7 +207,10 @@
 
   &__photo {
     margin: 0 auto;
-    margin-bottom: 28px;
+  
+    @media (max-width:767px) {
+      margin-bottom: 28px;
+    }
   }
 
   &__title {
