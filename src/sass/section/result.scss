@@ -1,0 +1,122 @@
+.container_result {
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0;
+  }
+  text-align: center;
+}
+
+.section__title_result {
+  color: $dark-text;
+  text-align: center;
+  margin-bottom: 28px;
+
+  &::before,
+  &::after {
+    color: $main-orange;
+  }
+}
+
+.result {
+  font-family: $font-acrom;
+  color: $dark-text;
+  padding-top: 60px;
+  padding-bottom: 58px;
+  border-bottom: 1px dashed rgba($dark-text, $alpha: 0.1);
+
+  &__content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    margin-bottom: 60px;
+
+    &-item {
+      @include font-settings(14px, 21px, 400);
+      position: relative;
+      padding-left: 65px;
+      text-align: left;
+
+      &::before {
+        @include pseudo();
+        width: 12px;
+        height: 12px;
+        background-color: $main-orange;
+        position: absolute;
+        top: 2px;
+        left: 25px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      max-width: 600px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 460px;
+    }
+  }
+
+  &__text-wrap {
+    background-color: $bg-violet;
+    color: $white-color;
+    text-align: center;
+    padding: 44px 20px 58px;
+    margin-bottom: 58px;
+
+    @media (min-width: 768px) {
+      width: 600px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 460px;
+      padding-top: 30px;
+      padding-left: 74px;
+      padding-bottom: 44px;
+    }
+  }
+
+  &__text-title {
+    @include font-settings(24px, 60px, 800);
+    margin-bottom: 4px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__text-comments {
+    @include font-settings(16px, 24px, 400);
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 476px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 90px;
+    padding-bottom: 95px;
+  }
+}
+
+.section__button_result {
+  margin-bottom: 22px;
+}
