@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -29,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-.conteiner {
+.container {
   width: 280px;
   margin: 0 auto;
 
@@ -37,7 +39,74 @@ a {
     width: 724px;
   }
 
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     width: 940px;
+  }
+}
+
+.section__title {
+  @include font-settings(30px, 40px, 800);
+  text-transform: uppercase;
+  font-family: $font-acrom;
+
+  &::before {
+    content: '[';
+    margin-right: 16px;
+  }
+
+  &::after {
+    content: ']';
+    margin-left: 16px;
+  }
+
+  @media (min-width: 768px) {
+    @include font-settings(35px, 45px, 800);
+  }
+
+  @media (min-width: 1200px) {
+    @include font-settings(43px, 60px, 800);
+  }
+}
+
+.section__button {
+  display: block;
+  margin: 0 auto;
+  width: 270px;
+  background-color: $main-orange;
+  box-shadow: 0px 8px 43px rgba($main-orange, 0.59);
+  border-radius: 30px;
+  border: none;
+  color: $white-color;
+  @include font-settings(12px, 60px, 800);
+  font-family: $font-acrom;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  @media (min-width: 1200px) {
+    cursor: pointer;
+  }
+}
+
+.sub-text {
+  display: inline-block;
+  background-color: $bg-violet;
+  @include font-settings(16px, 21px, 800);
+  color: $white-color;
+  font-family: $font-acrom;
+
+  &::before,
+  &::after {
+    @include font-settings(16px, 21px, 800);
+    color: $white-color;
+  }
+
+  &::before {
+    content: '[';
+    margin-right: 8px;
+  }
+
+  &::after {
+    content: ']';
+    margin-left: 8px;
   }
 }

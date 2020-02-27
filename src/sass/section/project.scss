@@ -1,0 +1,225 @@
+.text-subtitle {
+  @include font-settings(18px, 26px, 800);
+  font-family: "Acrom", sans-serif;
+  color: $main-orange;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.introduction {
+  @include font-settings(16px, 24px, 400);
+  font-family: "Acrom", sans-serif;
+  color: $dark-text;
+  margin-bottom: 38px;
+}
+
+.sub-introduction {
+  background-color: $main-orange;
+  font-weight: bold;
+}
+
+.oportunity-text {
+  @include font-settings(14px, 21px, 400);
+  font-family: "Acrom", sans-serif;
+  color: $text-grey;
+  margin-bottom: 15px;
+  clear: left;
+}
+
+.oportunity-img {
+  &__dec {
+    border-left: $white-color solid 29px;
+    border-top: $white-color solid 29px;
+    border-bottom: $white-color solid 29px;
+    border-right: none;
+    box-shadow: 1px 1.732px 6px 0px $dark-text;
+  }
+}
+
+.oportunity-dec {
+  font-weight: bold;
+  color: $dark-text;
+}
+
+.skills-list {
+  counter-reset: my-counter;
+
+  &__title {
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    counter-increment: my-counter;
+    margin-bottom: 40px;
+
+
+    &::before {
+      content: "#"counter(my-counter, decimal-leading-zero);
+      @include font-settings(23px, 24px, 800);
+      float: left;
+      font-family: "Acrom", sans-serif;
+      color: $main-orange;
+      margin-right: 8px;
+      align-items: baseline;
+    }
+  }
+
+  &__title_struct {
+    float: left;
+    @include font-settings(23px, 21px, 800);
+    margin-bottom: 15px;
+
+    &::before {
+      @include font-settings(23px, 21px, 800);
+    }
+
+    &::after {
+      @include font-settings(23px, 21px, 800);
+    }
+
+    &_hard {
+      width: 164px;
+    }
+
+    &_soft {
+      width: 160px;
+    }
+
+    &_english {
+      width: 157px;
+    }
+
+    &_career {
+      width: 188px
+    }
+
+  }
+}
+
+.project {
+  padding-bottom: 65px;
+}
+
+@media(min-width: 768px) {
+  .text-subtitle {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .introduction {
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+
+  }
+
+  .sub-introduction {
+    display: inline;
+    color: $white-color;
+  }
+
+  .introduction-dec {
+    display: block;
+  }
+
+  .skills-list {
+    display: block;
+    padding-top: 40px;
+    margin-bottom: 75px;
+
+    &::before {
+      @include pseudo(block);
+      width: 30px;
+      height: 35px;
+      position: absolute;
+      bottom: -2010px;
+      right: 22%;
+      transform: rotate(5deg);
+      border-top: 18px solid transparent;
+      border-left: 33px solid $main-orange;
+      border-bottom: 18px solid transparent;
+    }
+
+    &__item {
+      position: relative;
+
+      &::before {
+        margin-left: 130px;
+      }
+
+      &::after {
+        content: "";
+        width: 43px;
+        height: 3px;
+        display: block;
+        background-color: $main-orange;
+        position: absolute;
+        top: 2.5%;
+        left: 75px;
+      }
+    }
+  }
+
+  .oportunity-img {
+    margin: 0 auto;
+    border: $bg-violet solid 29px;
+    width: 475px;
+  }
+
+  .project {
+    padding-bottom: 90px;
+  }
+
+  .skills-wrapper {
+    padding-left: 40px;
+  }
+  
+}
+
+@media(min-width: 992px) {
+  .project {
+    padding-top: 75px;
+    padding-bottom: 95px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &::before {
+      bottom: -1720px;
+    }
+
+    &__item {
+      width: 400px;
+
+      :nth-child(-n+2) {
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        margin-left: 50px;
+      }
+
+      &::after {
+        left: 7px;
+      }
+    }
+
+    &::after {
+      left: 5px;
+    }
+  }
+
+}
+
+@media(min-width: 768px) and (max-width:1199px) {
+  .oportunity-text {
+    margin-bottom: 20px;
+    padding-left: 75px;
+    width: 688px;
+  }
+}
