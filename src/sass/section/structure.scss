@@ -1,0 +1,169 @@
+.title__str {
+  color: $dark-text;
+  text-align: left;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+
+  &::before {
+    content: "[";
+    @include font-settings(30px, 40px, 800);
+    font-family: "Acrom", sans-serif;
+    color: $main-orange;
+    position: relative;
+  }
+
+  &::after {
+    content: "]";
+    @include font-settings(30px, 40px, 800);
+    font-family: "Acrom", sans-serif;
+    color: $main-orange;
+  }
+}
+
+.structure {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: #e5e5e5 dashed 2px;
+
+}
+
+.instruction-list {
+  @include font-settings(14px, 21px, 400);
+  font-family: "Acrom", sans-serif;
+  color: $text-grey;
+  display: block;
+  margin-bottom: 35px;
+
+  &__item {
+    padding-left: 25px;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 15px;
+      height: 13px;
+      background-image: url(../../images/structure/list-dec.png);
+      position: relative;
+      top: 22px;
+      right: 35px;
+    }
+  }
+
+  &__dec {
+    font-weight: bold;
+    color: $dark-text;
+  }
+}
+
+.button__str {
+  margin-bottom: 22px;
+  @include font-settings(12px, 1.2px, 800);
+  line-height: 50px;
+
+}
+
+.decor {
+  display: block;
+  padding-left: 15px;
+}
+
+.text {
+  @include font-settings(16px, 21px, 800);
+  font-family: "Acrom", sans-serif;
+  color: $white-color;
+  background-color: $bg-violet;
+  width: 142px;
+  display: block;
+  text-align: center;
+
+
+  &::before {
+    content: "[";
+    @include font-settings(16px, 21px, 800);
+    font-family: "Acrom", sans-serif;
+    color: $white-color;
+  }
+
+  &::after {
+    content: "]";
+    @include font-settings(16px, 21px, 800);
+    font-family: "Acrom", sans-serif;
+    color: $white-color;
+  }
+
+  &-add {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width:768px) {
+  .structure {
+    position: relative;
+
+    &::before {
+      @include pseudo(block);
+      width: 30px;
+      height: 35px;
+      position: absolute;
+      top: 40px;
+      left: 17%;
+      transform: rotate(45deg);
+      border-top: 18px solid transparent;
+      border-left: 33px solid $main-orange;
+      border-bottom: 18px solid transparent;
+    }
+
+  }
+
+  .title__str {
+    text-align: center;
+    color: $dark-text;
+  }
+
+  .instruction-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 710px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 330px;
+      height: 255px;
+      background-image: url(../../images/structure/bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0px;
+    }
+
+    &__dec {
+      &_trans {
+        display: block;
+      }
+    }
+
+    &__item {
+      padding-left: 370px;
+    }
+  }
+}
+
+@media(min-width:992px) {
+  .instruction-list {
+    margin-bottom: 80px;
+
+    &::before {
+      left: 170px;
+    }
+  }
+
+  .structure {
+    padding-bottom: 94px;
+  }
+
+  .button__str::before {
+    bottom: 450px;
+  }
+}
