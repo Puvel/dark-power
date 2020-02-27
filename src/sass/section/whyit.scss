@@ -1,0 +1,106 @@
+.whyit {
+  padding: 60px 0;
+
+  &__title {
+    margin-bottom: 34px;
+    color: $dark-text;
+    text-align: center;
+
+    &::before {
+      color: $main-orange;
+    }
+
+    &::after {
+      color: $main-orange;
+    }
+  }
+
+  &__description {
+    @include font-settings (18px, 26px, 800);
+    font-family: $font-acrom;
+    color: $dark-text;
+    text-align: center;
+    padding: 0 22px;
+    margin-bottom: 30px;
+  }
+
+  &-list {
+    text-align: center;
+
+    &__text {
+      @include font-settings (14px, 21px, 400);
+      font-family: $font-acrom;
+      padding: 0 22px;
+    }
+
+    &__item::before {
+      display: block;
+      content: '';
+      width: 84px;
+      height: 84px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: $white-color;
+      box-shadow: 0px 2px 4px 0px rgba(11, 20, 30, 0.08);
+      margin-bottom: 18px;
+    }
+
+    &__item_money::before {
+      background-image: url(../images/icons/money.png);
+    }
+
+    &__item_controls::before {
+      background-image: url(../images/icons/controls.png);
+    }
+
+    &__item_clock::before {
+      background-image: url(../images/icons/clock.png);
+    }
+
+    &__item_bus::before {
+      background-image: url(../images/icons/bus.png);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .whyit-list__item:not(:last-child) {
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: 768px) {
+  .whyit {
+    padding: 90px 0;
+  }
+
+  .whyit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 490px;
+    margin: 0 auto;
+
+    &__item {
+      width: 228px;
+    }
+
+    &__text {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .whyit-list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .whyit-list {
+    width: 100%;
+  }
+}

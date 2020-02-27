@@ -1,0 +1,108 @@
+.offers {
+  padding: 40px 0;
+
+  &__title_left {
+    margin-bottom: 32px;
+    color: $dark-text;
+    text-align: center;
+
+    &::before {
+      color: $main-orange;
+    }
+
+    &::after {
+      color: $main-orange;
+    }
+  }
+
+  &-list {
+    text-align: center;
+    margin: 0 auto;
+
+    &__text {
+      @include font-settings (14px, 21px, 400);
+      font-family: $font-acrom;
+    }
+
+    &__item::before {
+      display: block;
+      content: '';
+      width: 84px;
+      height: 84px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: $main-orange;
+      margin-bottom: 18px;
+    }
+
+    &__item_plant::before {
+      background-image: url(../images/icons/plant.png);
+    }
+
+    &__item_lamp::before {
+      background-image: url(../images/icons/lamp.png);
+    }
+
+    &__item_hand::before {
+      background-image: url(../images/icons/hand.png);
+    }
+
+    &__item_house::before {
+      background-image: url(../images/icons/house.png);
+    }
+
+    &__item_cup::before {
+      background-image: url(../images/icons/cup.png);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .offers-list__item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .offers-list__text {
+    padding: 0 42px;
+  }
+
+  .offers__title_left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .offers {
+    padding: 90px 0;
+
+    &__title_left {
+      padding: 0 124px;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+
+      &__item {
+        width: 104px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .offers-list {
+    width: 780px;
+
+    &__item {
+      width: 140px;
+    }
+  }
+
+  .offers__title_left {
+    padding: 0 184px;
+  }
+}

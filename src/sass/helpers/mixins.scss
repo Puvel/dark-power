@@ -1,6 +1,7 @@
-@mixin font-settings($size, $height) {
+@mixin font-settings($size, $height, $weight) {
   font-size: $size;
   line-height: $height;
+  font-weight: $weight;
 }
 
 @mixin pseudo($display: inline-block, $content: '') {
@@ -18,24 +19,16 @@
 @mixin center-flex($type: 'all') {
   display: flex;
 
-  @if $type== 'all' {
+  @if $type=='all' {
     justify-content: center;
-    align-items: center;
-  } @else if $type== 'hor' {
-    justify-content: center;
-  } @else if $type== 'ver' {
     align-items: center;
   }
-}
 
-@mixin generate-pseudo-icons($baseclass, $list, $path, $ext) {
-  @each $icon in $list {
-    .#{$baseclass}#{$icon}::before {
-      background-image: url(#{$path}#{$icon}.#{$ext});
+  @else if $type=='hor' {
+    justify-content: center;
+  }
 
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(#{$path}#{$icon}@2px.#{$ext});
-      }
-    }
+  @else if $type=='ver' {
+    align-items: center;
   }
 }

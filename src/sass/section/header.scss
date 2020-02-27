@@ -1,0 +1,203 @@
+.header {
+  position: relative;
+  @include bg-image($path: '../images/bg_mobile.jpg', $pos: center top);
+  padding: 37px 0 65px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: $white-color;
+    width: 36px;
+    height: 36px;
+    left: 50%;
+    bottom: -31px;
+    transform: rotate(45deg) translate(-50%);
+  }
+
+  &__title_size {
+    font-size: 35px;
+    font-family: "Acrom", sans-serif;
+    color: $white-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: center;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "[";
+      font-size: 35px;
+      font-family: "Acrom", sans-serif;
+      color: $main-orange;
+      font-weight: 700;
+      line-height: 1.333;
+      margin-right: 16px;
+    }
+
+    &::after {
+      content: "]";
+      font-size: 35px;
+      font-family: "Acrom", sans-serif;
+      color: $main-orange;
+      font-weight: 700;
+      line-height: 1.333;
+      margin-left: 16px;
+    }
+  }
+
+  &__slogan {
+    @include font-settings (18px, 24px, 400);
+    font-family: $font-acrom;
+    color: $white-color;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    margin: 0 auto 32px;
+  }
+
+  &__text {
+    @include font-settings (14px, 21px, 400);
+    font-family: $font-acrom;
+    color: $white-color;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 26px;
+  }
+
+  &__start {
+    @include font-settings (30px, 32px, 400);
+    color: #fdc33f;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  &__project {
+    @include font-settings (16px, 21px, 400);
+    color: $white-color;
+    text-align: center;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-bottom: 32px;
+
+    &_arrow::before {
+      content: '//';
+    }
+
+    &_arrow::after {
+      content: '//';
+    }
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .header {
+    background-image: url(../images/bg_mobile@2x.jpg);
+  }
+}
+
+.site-logo {
+  display: block;
+  margin: 0 auto 16px;
+  width: 100px;
+}
+
+.header__button {
+  margin-bottom: 22px;
+  line-height: 50px;
+}
+
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(../images/bg_tablet.jpg);
+    padding-bottom: 80px;
+
+    &__slogan {
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 700px;
+      height: 50px;
+      border-radius: 30px;
+      line-height: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      @include font-settings (24px, 32px, 400);
+      margin-bottom: 50px;
+    }
+
+    &__start {
+      @include font-settings (44px, 53px, 400);
+      color: $bg-yellow;
+      margin-bottom: 48px;
+    }
+
+    &__project {
+      @include font-settings (18px, 32px, 400);
+      margin-bottom: 26px;
+
+      &_arrow::before {
+        content: url(../images/arrow.png);
+      }
+
+      &_arrow::after {
+        content: url(../images/arrow.png);
+      }
+    }
+  }
+
+  @media (min-resolution: 192dpi) {
+    .header {
+      background-image: url(../images/bg_tablet@2x.jpg);
+    }
+  }
+
+  .site-logo {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .header__title_size {
+    font-size: 43px;
+    margin-bottom: 30px;
+
+    &::before {
+      font-size: 43px;
+    }
+
+    &::after {
+      font-size: 43px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    background-image: url(../images/bg_desktop.jpg);
+    padding-bottom: 80px;
+
+    &__text {
+      @include font-settings (31px, 38px, 400);
+      margin-bottom: 50px;
+    }
+
+    &__title_size {
+      font-size: 53px;
+
+      &::before {
+        font-size: 53px;
+      }
+
+      &::after {
+        font-size: 53px;
+      }
+    }
+  }
+
+  @media (min-resolution: 192dpi) {
+    .header {
+      background-image: url(../images/bg_desktop@2x.jpg);
+    }
+  }
+}

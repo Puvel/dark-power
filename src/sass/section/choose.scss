@@ -1,0 +1,125 @@
+.container_graph {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.choose {
+  background-color: #f2f2f2;
+  padding: 60px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: $white-color;
+    width: 36px;
+    height: 36px;
+    left: 50%;
+    bottom: -31px;
+    transform: rotate(45deg) translate(-50%);
+  }
+
+  &__graph {
+    margin-left: auto;
+    margin-bottom: 25px;
+  }
+
+  &-qwe {
+    @include font-settings (18px, 26px, 800);
+    font-family: $font-acrom;
+    text-transform: uppercase;
+    color: $main-orange;
+    text-align: center;
+  }
+
+  &-list {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    color: $dark-text;
+    text-align: center;
+
+    &::before {
+      color: $main-orange;
+    }
+
+    &::after {
+      color: $main-orange;
+    }
+  }
+
+  &__description_small {
+    @include font-settings (14px, 21px, 800);
+    font-family: $font-acrom;
+    color: $dark-text;
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+
+  &__description_light {
+    font-weight: 400;
+  }
+
+  &__text {
+    @include font-settings (14px, 18px, 400);
+    padding-left: 35px;
+
+    &::before {
+      content: url(../images/tick.png);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 10px;
+    }
+
+
+    &_bold {
+      font-weight: 600;
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .choose-list__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .choose-list__item {
+    width: 516px;
+    margin: 0 auto;
+  }
+
+  .choose__graph {
+    margin: 0 auto 25px;
+  }
+
+  .choose-qwe {
+    @include font-settings (23px, 28px, 800);
+  }
+}
+
+@media (min-width: 1200px) {
+  .choose-list {
+    display: flex;
+  }
+
+  .choose__description_small {
+    padding-left: 20px;
+    padding-right: 5px;
+    text-align: left;
+  }
+
+  .choose__graph_bottom {
+    margin-bottom: 48px;
+  }
+}
