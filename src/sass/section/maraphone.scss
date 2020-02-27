@@ -1,0 +1,110 @@
+.maraphone {
+    position: relative;
+    background-image: url(../../images/maraphone/mobile-first.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 64px 0;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: $white-color;
+        width: 36px;
+        height: 36px;
+        left: 50%;
+        bottom: -31px;
+        transform: rotate(45deg) translate(-50%);
+    } 
+}
+
+.maraphone-description {
+    font-size: 18px;
+    font-family: "Acrom", sans-serif;
+    color: $dark-text;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.556;
+    margin: 0 auto;
+    text-align: center;
+    width: 270px;
+
+    &__text {
+        color: $white-color;
+    }
+
+    &__span-text {
+        color: $white-color;
+    }
+
+
+    &::before {
+        content: "[";
+        font-family: "Acrom", sans-serif;
+        color: $dark-text;
+        font-weight: 800;
+        line-height: 1.313;
+        font-size: 18px;
+    }
+
+    &::after {
+        content: "_]";
+        font-size: 18px;
+        font-family: "Acrom";
+        color: $dark-text;
+        font-weight: 800;
+        line-height: 1.313;
+    }  
+}
+
+@media (min-resolution: 192dpi) {
+    .maraphone {
+        background-image: url(../../images/maraphone/mobile-second@2x.jpg);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .maraphone {
+        background-image: url(../../images/maraphone/tablet_first.jpg);
+        padding: 78px 0;
+    }
+
+    .maraphone-description {
+        width: 620px;
+
+        &__tagline {
+            display: block;  
+        }
+    }
+
+    @media (min-resolution: 192dpi) {
+        .maraphone {
+            background-image: url(../../images/maraphone/tablet-second@2x.jpg);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .maraphone {
+        background-image: url(../../images/maraphone/desktop.jpg);
+        padding: 94px 0;
+    }
+
+    .maraphone-description {
+        width: 600px;
+
+        &__tagline {
+            display: initial;
+        }
+
+        &__text {
+            color: $dark-text;
+        }
+
+        @media (min-resolution: 192dpi) {
+            .maraphone {
+                background-image: url(../../images/maraphone/desktop@2x.jpg);
+            }
+        }
+    }
+}
