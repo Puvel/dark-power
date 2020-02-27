@@ -43,6 +43,7 @@ a {
     width: 940px;
   }
 }
+
 .section__title {
   @include font-settings(30px, 40px, 800);
   text-transform: uppercase;

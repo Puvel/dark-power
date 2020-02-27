@@ -1,0 +1,254 @@
+.awards {
+  padding-bottom: 100px;
+
+  @media (min-width:768px) {
+    padding-bottom: 116px;
+    width: 600px;
+  }
+
+  @media (min-width:1200px) {
+    width: 940px;
+  }
+}
+
+
+.section__title_awards {
+  margin: 0 auto;
+  width: 230px;
+  padding-top: 60px;
+  margin-bottom: 42px;
+  text-align: center;
+  color: $dark-text;
+
+  @media (min-width:768px) {
+    width: 600px;
+    padding-top: 94px;
+  }
+
+  &::before,
+  &::after {
+    color: $main-orange;
+  }
+
+  &::after {
+    content: "_]";
+    margin-left: 4px;
+  }
+}
+
+.two-articles {
+  @media (min-width:1200px) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.article-wraper {
+  margin: 0 auto;
+  width: 224px;
+  text-align: left;
+
+  @media (min-width:768px) {
+    margin: 0;
+    width: 388px;
+  }
+
+  @media (min-width:1200px) {
+    width: 385px;
+  }
+}
+
+.article-Go {
+  margin: 0 auto;
+  margin-bottom: 58px;
+  padding-top: 18px;
+  font-family: $font-acrom;
+  background-image: url(../images/img.png);
+  background-repeat: no-repeat;
+  background-position: top 0 right 16px;
+  background-size: 144px;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/img@2x.png);
+  }
+
+  @media (min-width:768px) {
+    margin-bottom: 44px;
+    padding-top: 12px;
+    padding-right: 38px;
+    background-position: top 2px right 18px;
+  }
+
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include font-settings (14px, 21px, 400);
+    font-family: $font-acrom;
+    color: $text-grey;
+  }
+}
+
+
+.article-title {
+  @include font-settings (23px, 30px, 800);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: $dark-text;
+  font-family: $font-acrom;
+}
+
+.sub-text__awards {
+  text-align: center;
+  width: 102px;
+
+  @media (min-width:768px) {
+    @include font-settings (16px, 21px, 500);
+  }
+
+  &::before,
+  &::after {
+    text-align: center;
+
+    &::before {
+      content: "[";
+      margin-right: 6px;
+    }
+
+    &::after {
+      content: "]";
+      margin-left: 6px;
+    }
+  }
+
+  &_first {
+    margin-bottom: 46px;
+
+    @media (min-width:768px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &_second {
+    margin-bottom: 40px;
+
+    @media (min-width:768px) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &_third {
+    margin-bottom: 52px;
+
+    @media (min-width:768px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.article-partner {
+  margin: 0 auto;
+  margin-bottom: 65px;
+
+  @media (min-width: 1200px) {
+    width: 460px;
+    padding-top: 12px;
+  }
+}
+
+.partner-logo {
+  margin: 0 auto;
+}
+
+.article-awards {
+  margin: 0 auto;
+
+  &__list {
+    margin-bottom: 68px;
+
+    @media (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 68px;
+    }
+  }
+
+  &__item {
+    text-align: left;
+
+    @media (max-width:767px) {
+      &:not(:last-child) {
+        margin-bottom: 70px;
+      }
+    }
+
+    @media (min-width:768px) {
+      width: 290px;
+      height: 398px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    @media (min-width:768px) and (max-width:1199px) {
+      &:nth-child(odd) {
+        margin-right: 20px;
+      }
+    }
+
+    @media (min-width:1200px) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__photo {
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+
+    @media (min-width:768px) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__description {
+    @include font-settings (14px, 21px, 400);
+    font-family: $font-acrom;
+    color: $text-grey;
+
+    &--special {
+      @include font-settings (14px, 21px, 800);
+      color: $dark-text;
+    }
+  }
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+
+  @media (min-width:768px) {
+    display: flex;
+    align-items: flex-end;
+    height: 194px;
+    margin-bottom: 28px;
+  }
+}
+
+.sub-text_start {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.bottom-box {
+  height: 56px;
+  background-color: $bg-violet;
+}
