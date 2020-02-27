@@ -94,14 +94,13 @@ a {
   color: $white-color;
   font-family: $font-acrom;
 
-  &::before,
-  &::after {
-    @include font-settings(16px, 21px, 800);
-    color: $white-color;
-  }
-
   &::before {
     content: '[';
     margin-right: 8px;
+  }
+
+  &::after {
+    content: ']';
+    margin-left: 8px;
   }
 }
