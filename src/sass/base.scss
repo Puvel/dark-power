@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -29,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-.conteiner {
+.container {
   width: 280px;
   margin: 0 auto;
 
@@ -37,7 +39,7 @@ a {
     width: 724px;
   }
 
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     width: 940px;
   }
 }
