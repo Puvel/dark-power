@@ -228,6 +228,12 @@
       left: 5px;
     }
   }
+
+  .oportunity-img:hover {
+    border: 29px solid $main-orange;
+    opacity: 0.97;
+    box-shadow: 0 55px 55px -45px rgba(0, 0, 0, .5);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
