@@ -36,6 +36,10 @@
   }
 }
 
+.button__pr {
+  margin-bottom: 20px;
+}
+
 .oportunity-dec {
   font-weight: bold;
   color: $dark-text;
@@ -107,6 +111,23 @@
     text-align: center;
   }
 
+  .project{
+    position: relative;
+
+    &::before {
+      @include pseudo(block);
+      width: 30px;
+      height: 35px;
+      position: absolute;
+      bottom: 35px;
+      right: 20%;
+      transform: rotate(5deg);
+      border-top: 18px solid transparent;
+      border-left: 33px solid $main-orange;
+      border-bottom: 18px solid transparent;
+    }
+  }
+
   .introduction {
     text-align: center;
     width: 640px;
@@ -127,19 +148,6 @@
     display: block;
     padding-top: 40px;
     margin-bottom: 75px;
-
-    &::before {
-      @include pseudo(block);
-      width: 30px;
-      height: 35px;
-      position: absolute;
-      bottom: -2010px;
-      right: 22%;
-      transform: rotate(5deg);
-      border-top: 18px solid transparent;
-      border-left: 33px solid $main-orange;
-      border-bottom: 18px solid transparent;
-    }
 
     &__item {
       position: relative;
@@ -174,13 +182,17 @@
   .skills-wrapper {
     padding-left: 40px;
   }
-  
+
 }
 
 @media(min-width: 992px) {
   .project {
     padding-top: 75px;
     padding-bottom: 95px;
+
+    &::before {
+      right: 34%;
+    }
   }
 
   .skills-list {

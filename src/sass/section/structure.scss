@@ -55,7 +55,7 @@
   }
 }
 
-.button {
+.button__str {
   margin-bottom: 22px;
   @include font-settings(12px, 1.2px, 800);
   line-height: 50px;
@@ -163,7 +163,7 @@
     padding-bottom: 94px;
   }
 
-  .button::before {
+  .button__str::before {
     bottom: 450px;
   }
 }
