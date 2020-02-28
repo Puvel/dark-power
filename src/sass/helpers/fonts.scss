@@ -8,6 +8,7 @@
     /* Chrome 26+, Opera 23+, Firefox 39+ */
     url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* montserrat-700 - latin */
 @font-face {
   font-family: "Montserrat";
@@ -25,9 +26,9 @@
   font-style: normal;
   font-weight: 700;
   src: local("Futura Bold"), local("Futura-Bold"),
-    url("../../fonts/futura-bold.woff2") format("woff2"),
+    url("../fonts/futura-bold.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../../fonts/Futura-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/Futura-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* acrom-regular- latin */
@@ -36,9 +37,9 @@
   font-style: normal;
   font-weight: 400;
   src: local("Acrom Regular"), local("Acrom-Regular"),
-    url("../../fonts/Acrom-Regular.woff2") format("woff2"),
+    url("../fonts/Acrom-Regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../../fonts/Acrom-Regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/Acrom-Regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* acrom-medium- latin */
@@ -47,9 +48,9 @@
   font-style: normal;
   font-weight: 500;
   src: local("Acrom Medium"), local("Acrom-Medium"),
-    url("../../fonts/Acrom-Medium.woff2") format("woff2"),
+    url("../fonts/Acrom-Medium.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../../fonts/Acrom-Medium.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/Acrom-Medium.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* acrom-bold- latin */
@@ -58,9 +59,9 @@
   font-style: normal;
   font-weight: 700;
   src: local("Acrom Bold"), local("Acrom-Bold"),
-    url("../../fonts/Acrom-Bold.woff2") format("woff2"),
+    url("../fonts/Acrom-Bold.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../../fonts/Acrom-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/Acrom-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* acrom-extrabold- latin */
@@ -69,7 +70,7 @@
   font-style: normal;
   font-weight: 800;
   src: local("Acrom Extrabold"), local("Acrom-Extrabold"),
-    url("../../fonts/Acrom-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Acrom-ExtraBold.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../../fonts/Acrom-ExtraBold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/Acrom-ExtraBold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
