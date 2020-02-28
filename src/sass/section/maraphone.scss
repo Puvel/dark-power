@@ -1,6 +1,6 @@
 .maraphone {
     position: relative;
-    background-image: url(../../images/maraphone/mobile-first.jpg);
+    background-image: url(../images/maraphone/mobile-first.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 64px 0;
@@ -58,14 +58,14 @@
 
 @media (min-resolution: 192dpi) {
     .maraphone {
-        background-image: url(../../images/maraphone/mobile-second@2x.jpg);
+        background-image: url(../images/maraphone/mobile-second@2x.jpg);
     }
 }
 
 
 @media (min-width: 768px) {
     .maraphone {
-        background-image: url(../../images/maraphone/tablet_first.jpg);
+        background-image: url(../images/maraphone/tablet_first.jpg);
         padding: 78px 0;
     }
 
@@ -79,14 +79,14 @@
 
     @media (min-resolution: 192dpi) {
         .maraphone {
-            background-image: url(../../images/maraphone/tablet-second@2x.jpg);
+            background-image: url(../images/maraphone/tablet-second@2x.jpg);
         }
     }
 }
 
 @media (min-width: 1200px) {
     .maraphone {
-        background-image: url(../../images/maraphone/desktop.jpg);
+        background-image: url(../images/maraphone/desktop.jpg);
         padding: 94px 0;
     }
 
@@ -103,7 +103,7 @@
 
         @media (min-resolution: 192dpi) {
             .maraphone {
-                background-image: url(../../images/maraphone/desktop@2x.jpg);
+                background-image: url(../images/maraphone/desktop@2x.jpg);
             }
         }
     }
