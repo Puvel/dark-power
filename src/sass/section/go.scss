@@ -56,6 +56,7 @@
       border-top: 18px solid transparent;
       border-left: 33px solid $main-orange;
       border-bottom: 18px solid transparent;
+      z-index: 123;
     }
   }
 
@@ -90,7 +91,6 @@
 
     &::before {
       right: 31%;
-      z-index: 123;
     }
   }
 }
