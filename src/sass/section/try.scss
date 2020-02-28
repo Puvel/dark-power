@@ -1,6 +1,6 @@
 .try {
   position: relative;
-  background-image: url(../../images/try/img_bg-first.jpg);
+  background-image: url(../images/try/img_bg-first.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 64px 0;
@@ -72,18 +72,18 @@
 
 @media (min-resolution: 192dpi) {
   .try {
-    background-image: url(../../images/try/img_bg-first@2x.jpg);
+    background-image: url(../images/try/img_bg-first@2x.jpg);
   }
 }
 
 @media (min-width: 768px) {
   .try {
-    background-image: url(../../images/try/tablet_first.jpg);
+    background-image: url(../images/try/tablet_first.jpg);
   }
 
   @media (min-resolution: 192dpi) {
     .try {
-      background-image: url(../../images/try/tablet_second@2x.jpg);
+      background-image: url(../images/try/tablet_second@2x.jpg);
     }
   }
 
@@ -111,12 +111,12 @@
 
 @media (min-width: 1200px) {
   .try {
-    background-image: url(../../images/try/desktop.jpg);
+    background-image: url(../images/try/desktop.jpg);
   }
 
   @media (min-resolution: 192dpi) {
     .try {
-      background-image: url(../../images/try/desktop@2x.jpg);
+      background-image: url(../images/try/desktop@2x.jpg);
     }
   }
 }
