@@ -1,0 +1,123 @@
+.modalwindow {
+  position: fixed;
+  font-family: $font-acrom;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  transition: opacity 400ms ease-in;
+  display: none;
+
+  &_active {
+    display: block;
+  }
+
+  &_container {
+    width: 280px;
+    height: 540px;
+    position: relative;
+    margin: 30px auto;
+    padding: 5px 20px 13px;
+    background-color: $bg-violet;
+    background-image: url('../images/icons/logo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+
+    @media (min-width: 768px) {
+      width: 320px;
+    }
+  }
+
+  &__title {
+    margin-top: 68px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    color: $white-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    font-family: $font-acrom;
+    color: $white-color;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__form_wrap {
+    margin: 15px auto;
+
+    & > label {
+      margin: 0;
+    }
+  }
+
+  &__form_check {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 22px;
+
+    & > label {
+      font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+      width: 250px;
+    }
+  }
+
+  &__btn {
+    @include font-settings(14px, 55px, 600);
+    text-align: center;
+    height: 55px;
+    box-shadow: 0 8px 19px 0 rgba(0, 0, 0, 0.29);
+    width: 250px;
+    
+    @media (min-width: 768px) {
+      width: 280px;
+    }
+  }
+}
+
+.close {
+  background-color: $main-orange;
+  color: $white-color;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px $dark-text;
+  border: none;
+  cursor: pointer;
+}
+
+.input_text,
+.input_tel,
+.input_emeil {
+  padding-left: 5px;
+  border: 1px solid $dark-text;
+  width: 240px;
+  height: 25px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 276px;
+  }
+}
+
+.input_chec {
+  margin-left: -18px;
+}
